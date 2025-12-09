@@ -102,15 +102,15 @@ for window_name, df in data.items():
     seasons = df_clean['season']
     
     # Time-based train/test split
-    # Train: 2022, 2023 | Test: 2024
-    train_mask = seasons.isin([2022, 2023])
-    test_mask = seasons == 2024
+    # Train: 2022, 2023, 2024 | Test: 2025
+    train_mask = seasons.isin([2022, 2023, 2024])
+    test_mask = seasons == 2025
     
     X_train, X_test = X[train_mask], X[test_mask]
     y_train, y_test = y[train_mask], y[test_mask]
     
-    print(f"  Train: {len(X_train):,} games (2022-2023)")
-    print(f"  Test:  {len(X_test):,} games (2024)")
+    print(f"  Train: {len(X_train):,} games (2022-2024)")
+    print(f"  Test:  {len(X_test):,} games (2025)")
     
     # ===========================================
     # CREATE PIPELINE: StandardScaler + LogReg
