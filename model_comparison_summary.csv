@@ -1,0 +1,9 @@
+Metric,L3 (3-game),L5 (5-game),L10 (10-game)
+Test Accuracy,0.6115,0.6279,0.6537
+Test AUC-ROC,0.6510,0.6736,0.7010
+Test Log Loss,0.6539,0.6470,0.6318
+Test Brier Score,0.2310,0.2276,0.2206
+Train Accuracy,0.6042,0.6145,0.6200
+Train AUC-ROC,0.6231,0.6292,0.6529
+Features Selected,13/32,6/32,8/32
+Best C (1/lambda),0.0336,0.0127,0.0127
